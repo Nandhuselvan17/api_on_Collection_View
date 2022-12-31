@@ -5,6 +5,10 @@
 //  Created by IOS on 31/12/22.
 //
 
+//important Note
+
+//create a collection view on story board and set the image view and label then use this code 
+
 import UIKit
 
 class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
