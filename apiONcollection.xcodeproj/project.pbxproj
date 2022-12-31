@@ -16,6 +16,7 @@
 		816885BC295FFFF5006D886D /* apiONcollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816885BB295FFFF5006D886D /* apiONcollectionTests.swift */; };
 		816885C6295FFFF5006D886D /* apiONcollectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816885C5295FFFF5006D886D /* apiONcollectionUITests.swift */; };
 		816885C8295FFFF5006D886D /* apiONcollectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816885C7295FFFF5006D886D /* apiONcollectionUITestsLaunchTests.swift */; };
+		816885D5296002C7006D886D /* ApiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816885D4296002C7006D886D /* ApiCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		816885C1295FFFF5006D886D /* apiONcollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = apiONcollectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		816885C5295FFFF5006D886D /* apiONcollectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiONcollectionUITests.swift; sourceTree = "<group>"; };
 		816885C7295FFFF5006D886D /* apiONcollectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiONcollectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		816885D4296002C7006D886D /* ApiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				816885A6295FFFF2006D886D /* SceneDelegate.swift */,
 				816885A8295FFFF2006D886D /* ViewController.swift */,
 				816885AA295FFFF2006D886D /* Main.storyboard */,
+				816885D4296002C7006D886D /* ApiCollectionViewCell.swift */,
 				816885AD295FFFF4006D886D /* Assets.xcassets */,
 				816885AF295FFFF4006D886D /* LaunchScreen.storyboard */,
 				816885B2295FFFF4006D886D /* Info.plist */,
@@ -261,6 +264,7 @@
 				816885A9295FFFF2006D886D /* ViewController.swift in Sources */,
 				816885A5295FFFF2006D886D /* AppDelegate.swift in Sources */,
 				816885A7295FFFF2006D886D /* SceneDelegate.swift in Sources */,
+				816885D5296002C7006D886D /* ApiCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
