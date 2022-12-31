@@ -8,11 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
-  
+  //variabel to get api data
     var json = [String:Any]()
+  // variable to get api data on collectionView
     var js = [String:Any]()
+  //for a collection scroll count not nesseari
     var jD = [Int]()
     
+  //timer add
     var timer = Timer()
     var counter = 0
     
@@ -22,18 +25,21 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        //colelction view frame height and witgh
            let direct = UICollectionViewFlowLayout()
            let celSize = CGSize(width: 300, height: 300)
            direct.itemSize = celSize
            direct.scrollDirection = .horizontal
            self.ApiColl.collectionViewLayout = direct
          
+      //page controller
         apiPG.numberOfPages = self.js.count
         apiPG.currentPage = 0
         
+      //function call
         self.apiCall()
         
+      //add action for timing and auto scrolling
         apiPG.numberOfPages = self.js.count
         apiPG.currentPage = 0
         DispatchQueue.main.async {
@@ -41,7 +47,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         }
         
     }
- 
+ //api function call
     func apiCall(){
         let url = URL(string: "https://reqres.in/api/users/2")
         var urlReq = URLRequest(url: url!)
@@ -64,6 +70,9 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         }
         task.resume()
     }
+  
+  //collection view information
+  
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -83,7 +92,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         return cell
     }
     
-    
+  //change password  
     @objc func changeImage() {
         if counter < self.js.count {
             let index = IndexPath.init(item: counter-1, section: 0)
